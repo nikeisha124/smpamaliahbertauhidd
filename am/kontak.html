@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak - SMP AMALIAH</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome via CDN supaya icon pasti muncul -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar-brand { font-weight: 700; }
+
+/* Card Kontak */
+.contact-card {
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.4s, box-shadow 0.4s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+.contact-card i { font-size: 35px; margin-bottom: 15px; display:block; }
+
+.contact-card .btn-contact {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.contact-card .btn-contact:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+/* Animasi fade */
+@keyframes fadeInUp {
+    0% {opacity: 0; transform: translateY(30px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+.fade-in { animation: fadeInUp 1s forwards; }
+
+/* Map */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #0d6efd;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">SMP AMALIAH</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SECTION -->
+<section class="container">
+  <h2 class="text-center fw-bold mb-5">Kontak & Lokasi SMP AMALIAH</h2>
+
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-4 col-sm-6">
+      <div class="contact-card fade-in" style="animation-delay:0.1s;">
+        <i class="fas fa-map-marker-alt"></i>
+        <h4>Alamat Sekolah</h4>
+        <p>Jl. Raya Ciawi No. 25, Ciawi, Bogor, Jawa Barat</p>
+        <a href="https://www.google.com/maps?q=SMP+Amaliah+Ciawi" target="_blank" class="btn-contact">Lihat di Maps</a>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="contact-card fade-in" style="animation-delay:0.4s;">
+        <i class="fas fa-user-tie"></i>
+        <h4>Info Admin</h4>
+        <p>0858-8877-2245 (Admin)</p>
+        <a href="tel:085888772245" class="btn-contact">Telepon Admin</a>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="contact-card fade-in" style="animation-delay:0.6s;">
+        <i class="fas fa-user"></i>
+        <h4>Info Samsudin</h4>
+        <p>0895-3214-09696 (Samsudin)</p>
+        <a href="tel:0895321409696" class="btn-contact">Telepon Samsudin</a>
+      </div>
+    </div>
+
+    <div class="col-12 fade-in" style="animation-delay:0.8s;">
+      <div class="map-responsive">
+        <iframe 
+            src="https://www.google.com/maps?q=SMP+Amaliah+Ciawi&output=embed" 
+            allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 SMP AMALIAH
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prestasi Sekolah - SMP AMALIAH</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar-brand { font-weight: 700; }
+
+/* Card Prestasi */
+.prestasi-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.prestasi-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.prestasi-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Judul utama */
+h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">SMP AMALIAH</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link active" href="prestasi.html">Prestasi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SECTION PRESTASI -->
+<section class="container mt-4">
+  <h2 class="fw-bold text-center">Prestasi Sekolah</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card prestasi-card shadow">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=tinysrgb&fit=max&h=200&fm=jpg">
+        <div class="card-body">
+          <h5 class="fw-bold">Juara 1 Olimpiade Matematika</h5>
+          <p>Siswa SMP Amaliah meraih juara 1 tingkat kota dalam Olimpiade Matematika.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card prestasi-card shadow">
+        <img src="https://images.unsplash.com/photo-1581093458368-8f46c99e4f0e?crop=entropy&cs=tinysrgb&fit=max&h=200&fm=jpg">
+        <div class="card-body">
+          <h5 class="fw-bold">Juara 2 Lomba Tahfidz</h5>
+          <p>Tim tahfidz SMP Amaliah meraih juara 2 tingkat provinsi dengan hafalan terbaik.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card prestasi-card shadow">
+        <img src="https://images.unsplash.com/photo-1562771247-9d3b39a1e0f7?crop=entropy&cs=tinysrgb&fit=max&h=200&fm=jpg">
+        <div class="card-body">
+          <h5 class="fw-bold">Juara Futsal Antar Sekolah</h5>
+          <p>Tim futsal SMP Amaliah menunjukkan performa solid dan memenangkan kejuaraan.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card prestasi-card shadow">
+        <img src="https://images.unsplash.com/photo-1581091215360-7f57f60c2903?crop=entropy&cs=tinysrgb&fit=max&h=200&fm=jpg">
+        <div class="card-body">
+          <h5 class="fw-bold">Juara 1 Lomba Sains</h5>
+          <p>SMP Amaliah meraih juara 1 tingkat provinsi pada kompetisi sains.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card prestasi-card shadow">
+        <img src="https://images.unsplash.com/photo-1596495577886-d920f55b4ef1?crop=entropy&cs=tinysrgb&fit=max&h=200&fm=jpg">
+        <div class="card-body">
+          <h5 class="fw-bold">Juara 3 English Speech</h5>
+          <p>Siswa SMP Amaliah meraih juara 3 lomba pidato bahasa Inggris tingkat kota.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card prestasi-card shadow">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&h=200&fm=jpg">
+        <div class="card-body">
+          <h5 class="fw-bold">Juara 1 Lomba Karya Tulis Nasional</h5>
+          <p>Peserta SMP Amaliah memenangkan lomba karya tulis tingkat nasional.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-primary text-white text-center py-3 mt-5">
+  © 2025 SMP AMALIAH
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
